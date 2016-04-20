@@ -21,6 +21,6 @@ ENV['RACK_ENV'] ||= 'development'
 
 Dir.glob('./{config,lib,models,middleware,helpers,controllers}/*.rb').each { |file| require file }
 
-use Login
-use Authentication 
+# use Login
+# use Authentication 
 run ApplicationController
